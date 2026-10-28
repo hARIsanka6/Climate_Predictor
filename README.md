@@ -2,24 +2,6 @@
 
 **ClimateGuard** is a full-stack machine learning web application designed to forecast localized natural disaster probabilities for a specific **city** and **target year**. By combining historical meteorological and disaster datasets with supervised learning algorithms—specifically **Support Vector Machines (SVMs)** and **Extreme Gradient Boosting (XGBoost)**—the platform transforms raw tabular climate records into actionable risk probabilities via a **Flask** REST API and an interactive **React.js** dashboard, fully containerized with **Docker**.
 
-## 📌 Table of Contents
-
-1. [Project Overview & Motivation](#-project-overview--motivation)
-
-2. [System Architecture & End-to-End Workflow](#-system-architecture--end-to-end-workflow)
-
-3. [Machine Learning Pipeline & Methodology](#-machine-learning-pipeline--methodology)
-
-4. [Tech Stack](#-tech-stack)
-
-5. [API Endpoint Specification](#-api-endpoint-specification)
-
-6. [Project Directory Structure](#-project-directory-structure)
-
-7. [Getting Started (Docker & Local Setup)](#-getting-started-docker--local-setup)
-
-8. [Roadmap & Future Enhancements](#-roadmap--future-enhancements)
-
 ## 🎯 Project Overview & Motivation
 
 Urban planners, researchers, and risk analysts often struggle to translate historical climate datasets into localized, easy-to-interpret risk assessments. Traditional data science notebooks remain isolated from end users, while standard weather applications only offer short-term meteorological forecasts rather than long-term annual hazard probabilities.
