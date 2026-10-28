@@ -63,7 +63,7 @@ ClimateGuard operates across two distinct pipelines: an **Offline Training & Eva
 +-----------------------------------------------------------------------------------+
 |                        2. ONLINE INFERENCE PIPELINE (DOCKERIZED)                  |
 +-----------------------------------------------------------------------------------+
-  [User Input on React.js Frontend] ---> (Selects Target City & Year)
+ [User Input on React.js Frontend] ---> (Selects Target City & Year)
                  |
                  v  HTTP POST /predict (JSON Payload)
   [Flask REST API Backend]
@@ -71,6 +71,6 @@ ClimateGuard operates across two distinct pipelines: an **Offline Training & Eva
   |-- Loads Pre-trained ML Model Artifact
   |-- Computes Disaster Probability Distribution
                  |
-                 v  HTTP
-
-```
+                 v  HTTP 200 OK (JSON Prediction Response)
+  [React.js Interactive Dashboard]
+  |-- Renders Probability Breakdown & Risk Severity
